@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .nutrition-tag {
+            margin-top: 20px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nutrition-tag h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .nutrition-tag p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .editable {
+            display: inline-block;
+            background-color: #555;
+            padding: 2px 5px;
+            border-radius: 3px;
+            cursor: text;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff4500;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e03e00;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="your-image-file.jpg" alt="Profile Image" class="profile-image">
+        <div class="nutrition-tag">
+            <h2>Nutrition Facts</h2>
+            <p>Calories: <span class="editable" contenteditable="true">Infinite cuddles</span></p>
+            <p>Fat: <span class="editable" contenteditable="true">20g of fluff</span></p>
+            <p>Carbohydrates: <span class="editable" contenteditable="true">15g of curiosity</span></p>
+            <p>Protein: <span class="editable" contenteditable="true">30g of purrs</span></p>
+            <p>Vitamins: <span class="editable" contenteditable="true">50mg of mischief</span></p>
+            <p>Minerals: <span class="editable" contenteditable="true">25mg of catnip</span></p>
+        </div>
+        <a href="index.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
